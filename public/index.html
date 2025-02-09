@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Generator</title>
+  </head>
+
+  <body>
+    <h1>Name Generator</h1>
+    <form action="/submit" method="POST">
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" required />
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" required />
+      <input type="submit" value="Submit" />
+    </form>
+    <h1>Secrets</h1>
+    <form action="/check" method="POST">
+      <label for="password">Password:</label>
+      <input type="text" id="password" name="password" required />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
